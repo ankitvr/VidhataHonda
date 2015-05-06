@@ -22,29 +22,37 @@
     <!-- Add your site or application content here -->
     <header class="header">
       <nav class="navbar navbar-inverse" role="navigation">
-          <div class="navbar-header">
+        <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-            <a class="navbar-brand" href="#/">
-              <span class="sr-only">Vidhata Honda</span>
-              <img src="/images/logo.png"/>
-            </a>
-          </div>
+          <a class="navbar-brand" href="#/">
+            <span class="sr-only">Vidhata Honda</span>
+            <img src="/images/logo.png"/>
+          </a>
+        </div>
 
-          <div class="collapse navbar-collapse navbar-right" id="js-navbar-collapse">
+        <div class="navigationLinks" id="js-navbar-collapse">
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/">Home</a></li>
+            <li><a ng-href="#/about">About</a></li>
+            <li><a ng-href="#/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="secondaryNavigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/specifications">Specifications</a></li>
+            <li><a href="/price">Price</a></li>
+            <li><a href="/usedCars">Used Cars</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -52,9 +60,48 @@
       <div ng-view=""></div>
     </main>
 
-    <footer>
-      <div>
-        <p><span class="glyphicon glyphicon-heart"></span> from the 3A Consultants team</p>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <p>CONTACT US</p>
+          <p>+31(0)13-530 03 89</p>
+          <p>Monday - Friday 08.30 - 17.00 CET</p>
+        </div>
+        <div class="col-md-3">
+          <p>DOWNLOAD OUR BROCHURE</p>
+        </div>
+        <div class="col-md-3">
+          <p>SHOPPING AT FUNCTIONALS</p>
+          <p>Delivery and shipping</p>
+          <p>Payment methods</p>
+          <p>Returns or exchanges</p>
+          <p>Terms & conditions</p>
+          <p>Privacy</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Sign up for our newsletter</h5>
+
+			<div class="newsletterform" id="newslettersignup">
+
+				<div id="mc_embed_signup">
+					<form action="http://functionals.us5.list-manage2.com/subscribe/post?u=697c8305720975044c27c10f9&amp;id=536313115c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+						<input class="newsletterform-input" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address" required="">
+						<input class="button newsletterform-submit" type="submit" name="subscribe" value="Go" id="mc-embedded-subscribe">
+					</form>
+				</div>
+			</div>
+			<div class="social">
+				<span class="social-label">
+					Follow us:
+				</span>
+				<div class="social-icons">
+					<a title="Functionals Facebook page" href="https://www.facebook.com/functionals.eu" target="_blank"><i>a</i></a>
+					<a title="Functionals Twitter feed" href="https://twitter.com/Functionals" target="_blank"><i>b</i></a>
+					<a title="Functionals at Pinterest" href="http://pinterest.com/functionals/" taret="_blank"><i>c</i></a>
+          <a title="Functionals at Pinterest" href="http://pinterest.com/functionals/" taret="_blank"><i>d</i></a>
+				</div>
+			</div>
+        </div>
       </div>
     </footer>
 

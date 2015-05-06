@@ -1,0 +1,27 @@
+$navbar-inverse-bg: #272829 !default;
+$navbar-height:30px !default;
+$navbar-border-radius:0px !default;
+
+header .navbar-brand{
+  padding-top:0px;
+}
+
+.navigationLinks{
+  @extend .collapse;
+  @extend .navbar-collapse;
+  @extend .navbar-right
+}
+
+
+.secondaryNavigation{
+  float:right;
+  height:100px;
+  ul{
+    list-style:none;
+    li{
+      padding:0 10px;
+      display:inline;
+      border-left: 1px solid #B3B3B3;
+    }
+  }
+}
