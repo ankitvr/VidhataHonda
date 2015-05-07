@@ -15,7 +15,6 @@ header .navbar-brand{
 
 .secondaryNavigation{
   float:right;
-  height:100px;
   ul{
     list-style:none;
     li{
@@ -24,4 +23,9 @@ header .navbar-brand{
       border-left: 1px solid #B3B3B3;
     }
   }
+}
+
+
+header.header{
+  margin-bottom:100px;
 }
