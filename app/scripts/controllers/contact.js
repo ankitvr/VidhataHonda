@@ -9,7 +9,7 @@
  */
 angular.module('vidhataHondaApp')
     .controller('ContactCtrl', function ($scope, $http) {
-    $scope.result = 'hidden'
+    $scope.result = 'hidden';
     $scope.resultMessage;
     $scope.formData; //formData is an object holding the name, email, subject, and message
     $scope.submitButtonDisabled = false;
@@ -21,7 +21,7 @@ angular.module('vidhataHondaApp')
             $http({
                 method  : 'POST',
                 url     : 'contact-form.php',
-                data    : $.param($scope.formData),  //param method from jQuery
+                data    : jQuery.param($scope.formData),  //param method from jQuery
                 headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
             }).success(function(data){
                 console.log(data);
@@ -40,5 +40,5 @@ angular.module('vidhataHondaApp')
             $scope.resultMessage = 'Failed <img src="http://www.chaosm.net/blog/wp-includes/images/smilies/icon_sad.gif" alt=":(" class="wp-smiley">  Please fill out all the fields.';
             $scope.result='bg-danger';
         }
-    }
+    };
 });

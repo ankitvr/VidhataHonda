@@ -9,7 +9,7 @@ header .navbar-brand{
 .navigationLinks{
   @extend .collapse;
   @extend .navbar-collapse;
-  @extend .navbar-right
+  @extend .navbar-right;
 }
 
 
@@ -28,4 +28,15 @@ header .navbar-brand{
 
 header.header{
   margin-bottom:100px;
+
+  .navigationLinks{
+    margin-right: 0px;
+  }
+
+  .navbar-brand{
+    img{
+      max-width:200px; margin-top: -7px;
+    }
+  }
+
 }

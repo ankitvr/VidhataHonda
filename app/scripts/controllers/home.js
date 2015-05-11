@@ -12,12 +12,12 @@ angular.module('vidhataHondaApp')
     $scope.myInterval = 5000;
     var slides = $scope.slides = [];
     var homePageSliderFolder = '/images/homepage/slider/';
-    var carNames = ['Honda-Amaze','Honda-Brio','Honda-City','Honda-Crv','Honda-Jazz','Honda-Mobilio'];
     $scope.addSlide = function() {
     var title = carNames[slides.length % 4];
     slides.push({
         image: homePageSliderFolder + title + '.jpg',
-        text: title
+        text: title,
+        landingPage:'#/'+title
       });
     };
 

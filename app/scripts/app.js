@@ -8,6 +8,7 @@
  *
  * Main module of the application.
  */
+ var carNames = ['Honda-Amaze','Honda-Brio','Honda-City','Honda-Crv','Honda-Jazz','Honda-Mobilio']; 
 angular
   .module('vidhataHondaApp', [
     'ngAnimate',
@@ -32,6 +33,10 @@ angular
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
+      })
+      .when('/Honda-Amaze', {
+        templateUrl: 'views/products/amaze.html',
         controller: 'ContactCtrl'
       })
       .otherwise({
