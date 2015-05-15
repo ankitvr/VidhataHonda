@@ -2,15 +2,6 @@
 @import "modules/_headerSection.scss";
 @import "modules/_mainSection.scss";
 
-
-@font-face {
-    font-family: socialFonts;
-    src: url("/fonts/socicon-webfont.woff");
-}
-
 .social {
   display:inline-block;
-  .social-icons{
-  font-family: socialFonts;
-  }
 }

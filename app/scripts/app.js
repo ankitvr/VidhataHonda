@@ -7,8 +7,7 @@
  * # vidhataHondaApp
  *
  * Main module of the application.
- */
- var carNames = ['Honda-Amaze','Honda-Brio','Honda-City','Honda-Crv','Honda-Jazz','Honda-Mobilio']; 
+ */ 
 angular
   .module('vidhataHondaApp', [
     'ngAnimate',

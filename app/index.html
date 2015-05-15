@@ -8,6 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -33,7 +34,7 @@
 
           <a class="navbar-brand" href="#/">
             <span class="visible-xs">Vidhata Honda</span>
-            <img class="hidden-xs" src="/images/logo.gif" alt=""/>
+            <!-- <img class="hidden-xs" src="/images/logo.gif" alt=""/> -->
           </a>
         </div>
 
@@ -46,18 +47,14 @@
           </ul>
         </div>
       </nav>
-      <nav class="secondaryNavigation">
-          <ul>
-            <li><a ng-href="/">Home</a></li>
-            <li><a ng-href="#/specifications">Specifications</a></li>
-            <li><a ng-href="#/price">Price</a></li>
-            <li><a ng-href="#/usedCars">Used Cars</a></li>
-          </ul>
-      </nav>
+
+        <vehicle-navigation></vehicle-navigation>
+
     </header>
 
-    <main>
+    <main class="container">
       <div ng-view=""></div>
+      <offers></offers>
     </main>
 
     <footer class="container-fluid">
@@ -93,13 +90,12 @@
 			<div class="social">
 				<span class="social-label">
 					Follow us:
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-google-plus"></i>
+          <i class="fa fa-youtube"></i>
 				</span>
-				<div class="social-icons">
-					<a title="Functionals Facebook page" href="https://www.facebook.com/functionals.eu" target="_blank"><i>a</i></a>
-					<a title="Functionals Twitter feed" href="https://twitter.com/Functionals" target="_blank"><i>b</i></a>
-					<a title="Functionals at Pinterest" href="http://pinterest.com/functionals/" taret="_blank"><i>c</i></a>
-          <a title="Functionals at Pinterest" href="http://pinterest.com/functionals/" taret="_blank"><i>d</i></a>
-				</div>
+
 			</div>
         </div>
       </div>
@@ -138,7 +134,9 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/home.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/directives/carselect.js"></script>
+        <script src="scripts/directives/vehiclenavigation.js"></script>
+        <script src="scripts/services/shareddata.js"></script>
+        <script src="scripts/directives/offers.js"></script>
         <!-- endbuild -->
 </body>
 </html>

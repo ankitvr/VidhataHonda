@@ -8,20 +8,19 @@
  * Controller of the vidhataHondaApp
  */
 angular.module('vidhataHondaApp')
-  .controller('HomeCtrl', function ($scope) {
-    $scope.myInterval = 5000;
+  .controller('HomeCtrl', function ($scope,SharedData) {
+    $scope.myInterval = 55000;
     var slides = $scope.slides = [];
-    var homePageSliderFolder = '/images/homepage/slider/';
     $scope.addSlide = function() {
-    var title = carNames[slides.length % 4];
+    var car = SharedData.getCarDetails().cars[slides.length % 4];
     slides.push({
-        image: homePageSliderFolder + title + '.jpg',
-        text: title,
-        landingPage:'#/'+title
+        image: car.image,
+        text: car.carName,
+        landingPage:car.landingPage
       });
     };
 
-    for (var i=0; i<carNames.length; i++) {
+    for (var i=0; i<SharedData.getCarDetails().cars.length; i++) {
       $scope.addSlide();
     }
   });
