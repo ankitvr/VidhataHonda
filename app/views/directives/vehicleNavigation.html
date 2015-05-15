@@ -1,13 +1,15 @@
 <nav class="secondaryNavigation">
-    <span ng-repeat="car in cars" class="dropdown" dropdown on-toggle="toggled(open)">
+  <div class="container">
+    <span ng-repeat="car in cars" class="dropdown" dropdown on-hover="toggled(open)">
       <a href class="dropdown-toggle" dropdown-toggle>
-        {{carName}}
+        {{car.carName}}
         <i class='fa fa-angle-down'></i>
       </a>
       <ul class="dropdown-menu">
-        <li ng-repeat="page in pages">
+        <li ng-repeat="page in car.pages">
           <a href="#/">{{page.title}}</a>
         </li>
       </ul>
     </span>
+  </div>
 </nav>

@@ -11,7 +11,9 @@ angular.module('vidhataHondaApp')
   return {
       controller: ['$scope', function ($scope) {
           $scope.cars = SharedData.getCarDetails().cars;
-          cars.foreach().pages = SharedData.getCarDetails().defaultPages;
+          $scope.cars.forEach(function (car, i) {
+            car.pages = SharedData.getCarDetails().defaultPages;
+          });
       }],
       templateUrl: 'views/directives/vehicleNavigation.html',
       restrict: 'E'
