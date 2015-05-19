@@ -7,12 +7,15 @@
  * # offers
  */
 angular.module('vidhataHondaApp')
-  .directive('offers', function () {
+  .directive('offers', function (SharedData) {
     return {
-      template: '<div></div>',
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the offers directive');
-      }
+      controller: ['$scope', function ($scope) {
+          $scope.offers = SharedData.getCarDetails().cars;
+          $scope.offers.forEach(function (car, i) {
+            offers.pages = SharedData.getCarDetails().defaultPages;
+          });
+      }],
+      templateUrl: 'views/directives/offers.html',
+      restrict: 'E'
     };
   });

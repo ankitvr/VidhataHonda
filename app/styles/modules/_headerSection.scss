@@ -8,6 +8,7 @@ header{
 
   .navbar-brand{
     padding-top:0px;
+    img{max-height: 250%;}
   }
 
   .navigationLinks{
@@ -36,7 +37,7 @@ header{
     }
 
     .dropdown-menu li .sub-menu,
-    .dropdown .dropdown-menu 
+    .dropdown .dropdown-menu
      {
         @include transition-property(visibility);
         @include transition-duration(2s);
