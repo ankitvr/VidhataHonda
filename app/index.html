@@ -53,8 +53,10 @@
     </header>
 
     <main class="container">
-      <div ng-view=""></div>
-      <offers></offers>
+      <div class="row">
+        <div ng-view="" class="col-xs-8"></div>
+        <offers class="col-xs-3 col-xs-offset-1"></offers>
+      </div>
     </main>
 
     <footer class="container-fluid">

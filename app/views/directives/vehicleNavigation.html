@@ -1,13 +1,19 @@
 <nav class="secondaryNavigation">
-    <span ng-repeat="car in cars" class="dropdown" dropdown on-toggle="toggled(open)">
-      <a href class="dropdown-toggle" dropdown-toggle>
-        {{carName}}
-        <i class='fa fa-angle-down'></i>
-      </a>
-      <ul class="dropdown-menu">
-        <li ng-repeat="page in pages">
-          <a href="#/">{{page.title}}</a>
-        </li>
-      </ul>
-    </span>
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li class="dropdown" ng-repeat="car in cars">
+        <a data-toggle="dropdown" class="dropdown-toggle">{{car.carName}} <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li ng-repeat="page in car.pages">
+            <a href="#/">{{page.title}}</a>
+          </li>
+        </ul>
+      </li>
+      <li class="pull-right">
+        <a href="/offers">
+            <span>Offers Zone</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>

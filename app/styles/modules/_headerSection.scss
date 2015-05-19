@@ -18,24 +18,29 @@ header{
   }
 
   .secondaryNavigation{
-    &>div{
-      @extend .container;
+    div.container{
       text-align:center;
-      margin:0 auto;
     }
     ul{
-      list-style:none;
-      li{
-        padding:0 20px;
-        display:inline;
-        border-left: 1px solid #B3B3B3;
+      li:last{
+        border-style:dashed;
       }
     }
-  }
-  .navbar-brand{
-    img{
-      max-width:200px; margin-top: -7px;
-    }
-  }
 
+    .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li .sub-menu,
+    .dropdown .dropdown-menu 
+     {
+        @include transition-property(visibility);
+        @include transition-duration(2s);
+        @include transition-timing-function(ease-in);
+     }
+  }
 }
