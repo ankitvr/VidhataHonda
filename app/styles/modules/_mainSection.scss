@@ -5,24 +5,23 @@
 .mainContent{
   @extend .col-md-8;
   @extend .well;
-  
-  	-webkit-transition: -webkit-transform 1s;
-  	-webkit-perspective: 600px;
-  &>div{
-  	-webkit-transform-style: preserve-3d;
-  	-webkit-backface-visibility: hidden;
-  	-webkit-transition: all 1s ease-in-out;
-  }
-  &>div.ng-enter {
+
+
+  &>div.ng-enter,  &>div.ng-leave {
+    transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
       -webkit-transform: rotateY(-180deg);
   }
-  &>div.ng-enter-active {
-  	-webkit-transform: rotateY(0deg);
-  }
-  &>div.ng-leave {
-  	-webkit-transform: rotateY(0deg);
-  }
-  &>div.ng-leave-active {
-  	-webkit-transform: rotateY(180deg);
-  }
+  &>div.ng-enter {
+    left: 100%;
+    .ng-enter-active {
+        left: 0;
+    }
+}
+
+&>div.ng-leave {
+    left: 0;
+    .ng-leave-active{
+        left: -100%;
+    }
+}
 }

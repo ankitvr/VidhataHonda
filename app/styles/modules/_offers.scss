@@ -5,7 +5,9 @@ offers{
 
 .offers{
 section{
-  transition: all .2s ease-in-out;
+  @include transition-property(all);
+  @include transition-duration(0.4s);
+  @include transition-timing-function(ease-in-out);
   &:hover{
     transform:scale(1.2);
     z-index:5;
@@ -88,25 +90,4 @@ input,
   position: relative;
   z-index: 2;
 }
-
-
-//
-//
-// main {
-//   display: block;
-//   position: relative;
-//   width: 30rem;
-//   margin: 3vh auto;
-//   padding: 1.5rem 0 0;
-//   background: #d5d5d5;
-//   outline border-radius: .25rem;
-//   overflow: hidden;
-//   transform: scale(.75);
-//   transform-origin: center 3rem;
-//   transition: transform .3s;
-// }
-//
-// body:hover main {
-//   transform: scale(1);
-// }
 }

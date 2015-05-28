@@ -19,6 +19,7 @@ header{
   }
 
   .secondaryNavigation{
+    margin-bottom: 20px;
     div.container{
       text-align:center;
     }
@@ -39,9 +40,9 @@ header{
     .dropdown-menu li .sub-menu,
     .dropdown .dropdown-menu
      {
-        // @include transition-property(visibility);
-        // @include transition-duration(2s);
-        // @include transition-timing-function(ease-in);
+        @include transition-property(all);
+        @include transition-duration(5s);
+        @include transition-timing-function(ease-in);
      }
   }
 }
