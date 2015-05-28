@@ -1,6 +1,6 @@
   <div ng-controller="HomeCtrl">
     <div>
-      <carousel interval="myInterval">
+      <carousel interval="myInterval" class="homePageSlider">
         <slide ng-repeat="car in cars" active="slide.active">
           <a ng-href="{{car.landingPage}}"><img ng-src="{{car.image}}"></a>
           <div class="carousel-caption">

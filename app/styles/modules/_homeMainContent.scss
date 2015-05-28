@@ -1,0 +1,16 @@
+.homePageSlider{
+  a>img{
+      @media screen and (max-width: $container-desktop) {
+      height:$homePageSliderHeight !important;
+      max-height: $homePageSliderHeight;
+    }
+    @media screen and (max-width: $container-tablet) {
+    height:$homePageSliderHeight*0.6 !important;
+    max-height: $homePageSliderHeight*0.6;
+  }
+  @media screen and (max-width: $container-sm) {
+  height:$homePageSliderHeight*0.4 !important;
+  max-height: $homePageSliderHeight*0.4;
+}
+  }
+}
