@@ -2,3 +2,27 @@
   width:100%;
   max-height: 550px !important;
 }
+.mainContent{
+  @extend .col-md-8;
+  @extend .well;
+  
+  	-webkit-transition: -webkit-transform 1s;
+  	-webkit-perspective: 600px;
+  &>div{
+  	-webkit-transform-style: preserve-3d;
+  	-webkit-backface-visibility: hidden;
+  	-webkit-transition: all 1s ease-in-out;
+  }
+  &>div.ng-enter {
+      -webkit-transform: rotateY(-180deg);
+  }
+  &>div.ng-enter-active {
+  	-webkit-transform: rotateY(0deg);
+  }
+  &>div.ng-leave {
+  	-webkit-transform: rotateY(0deg);
+  }
+  &>div.ng-leave-active {
+  	-webkit-transform: rotateY(180deg);
+  }
+}
