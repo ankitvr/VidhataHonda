@@ -4,9 +4,8 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 $homePageSliderHeight: 740px;
 
 // bower:scss
-@import "font-awesome/scss/font-awesome";
-@import "compass-mixins/lib/_compass.scss";
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "compass-mixins/lib/_compass.scss";
 // endbower
 
 @import "_base.scss";

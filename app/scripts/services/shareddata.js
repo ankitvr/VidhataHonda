@@ -25,32 +25,32 @@ angular.module('vidhataHondaApp')
   'cars':[
       {
         'carName': 'Honda-Amaze',
-        'image':'/images/homepage/slider/Honda-Amaze.jpg',
+        'image':'/images/Honda-Amaze.jpg',
         'landingPage':'#/Honda-Amaze',
       },
       {
         'carName': 'Honda-Brio',
-        'image':'/images/homepage/slider/Honda-Brio.jpg',
+        'image':'/images/Honda-Brio.jpg',
         'landingPage':'#/Honda-Brio',
       },
       {
         'carName': 'Honda-City',
-        'image':'/images/homepage/slider/Honda-City.jpg',
+        'image':'/images/Honda-City.jpg',
         'landingPage':'#/Honda-City',
       },
       {
         'carName': 'Honda-Crv',
-        'image':'/images/homepage/slider/Honda-Crv.jpg',
+        'image':'/images/Honda-Crv.jpg',
         'landingPage':'#/Honda-Crv',
       },
       {
         'carName': 'Honda-Jazz',
-        'image':'/images/homepage/slider/Honda-Jazz.jpg',
+        'image':'/images/Honda-Jazz.jpg',
         'landingPage':'#/Honda-Jazz',
       },
       {
         'carName': 'Honda-Mobilio',
-        'image':'/images/homepage/slider/Honda-Mobilio.jpg',
+        'image':'/images/Honda-Mobilio.jpg',
         'landingPage':'#/Honda-Mobilio',
       }
     ]
